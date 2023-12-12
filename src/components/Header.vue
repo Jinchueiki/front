@@ -10,11 +10,11 @@ const count = ref(0)
 
 <template> <!-- BALISE TEMPLATE POUR HTML -->
   <header>
-        <div class="logo">
+        <div id="logo">
             <p><span>BDE </span>éstiam</p>
         </div>
 
-        <ul class="menu">
+        <ul id="menu">
             <li><a href="">Accueil</a></li>
             <li><a href="">Evenements</a></li>
             <li><a href="">Bons plans</a></li>
@@ -23,7 +23,7 @@ const count = ref(0)
             <li><a href="">Boutique</a></li>
         </ul>
 
-        <button class="account_btn">COMPTE</button>
+        <button id="account_btn">COMPTE</button>
     </header>
 </template>
 
@@ -42,7 +42,7 @@ header {
     height: 50px;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 }
-header .logo {
+#logo {
     color: #6231C6;
     font-size: 25px;
     font-weight: bold;
@@ -56,23 +56,23 @@ header button {
     color: #fff;
     padding: 5px 25px;
 }
-.menu {
+#menu {
     display: flex;
 }
-.menu li {
+#menu li {
     list-style: none;
     margin: 0 15px;
 }
-.menu li a {
+#menu li a {
     font-size: 14px;
     color: #000;
     font-weight: 300;
     transition: 0.2s;
 }
-.menu li a:hover {
+#menu li a:hover {
     color: #6231C6;
 }
-.account_btn {
+#account_btn {
   border-radius: 0;
 }
 </style>
