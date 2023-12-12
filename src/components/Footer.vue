@@ -1,22 +1,16 @@
 <script setup> /* BALISE SCRIPT POUR JAVASCRIPT */
-import { ref } from 'vue'
 
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
 </script>
 
 <template> <!-- BALISE TEMPLATE POUR HTML -->
 <footer>
     <div id="pages">
-        <a href="./components/App.vue">Accueil</a>
-        <a href="./components/Event.vue">Evenements</a>
-        <a href="./components/Offers.vue">Bons plans</a>
-        <a href="./components/Members.vue">Membres</a>
-        <a href="./components/Contact.vue">Contact</a>
-        <a href="./components/Shop.vue">Boutique</a>
+        <a href="App.vue">Accueil</a>
+        <a href="Event.vue">Evenements</a>
+        <a href="Offers.vue">Bons plans</a>
+        <a href="Members.vue">Membres</a>
+        <a href="Contact.vue">Contact</a>
+        <a href="Shop.vue">Boutique</a>
     </div>
     <div id="contacts">Contacts
         Address : 29 avenue Leclerc

@@ -1,34 +1,28 @@
-<script setup> /* BALISE SCRIPT POUR JAVASCRIPT */
-import { ref } from 'vue'
-
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
+<script setup>
+/* Script setup content goes here */
 </script>
 
-<template> <!-- BALISE TEMPLATE POUR HTML -->
+<template>
   <header>
-        <div id="logo">
-            <p><span>BDE </span>éstiam</p>
-        </div>
+    <div id="logo">
+      <p><span>BDE </span>éstiam</p>
+    </div>
 
-        <ul id="menu">
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Evenements</a></li>
-            <li><a href="">Bons plans</a></li>
-            <li><a href="">Membres</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Boutique</a></li>
-        </ul>
+    <ul id="menu">
+      <li><a href="Main.vue">Accueil</a></li>
+      <li><a href="Event.vue">Evenements</a></li>
+      <li><a href="Offers.vue">Bons plans</a></li>
+      <li><a href="Members.vue">Membres</a></li>
+      <li><a href="Contact.vue">Contact</a></li>
+      <li><button @click="switchComponent">Boutique</button></li>
+    </ul>
 
-        <button id="account_btn">COMPTE</button>
-    </header>
+    <button id="account_btn">COMPTE</button>
+  </header>
 </template>
 
-<style scoped> /* BALISE SCRIPT POUR CSS */
-header {
+<style scoped>
+    header {
     position: fixed;
     top: 0;
     left: 0;
@@ -76,3 +70,13 @@ header button {
   border-radius: 0;
 }
 </style>
+
+<script>
+export default {
+  methods: {
+    switchComponent() {
+      this.$emit('switch-component', 'Shop');
+    }
+  }
+};
+</script>
