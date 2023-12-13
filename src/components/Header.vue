@@ -9,12 +9,12 @@
     </div>
 
     <ul id="menu">
-      <li><a href="Main.vue">Accueil</a></li>
-      <li><a href="Event.vue">Evenements</a></li>
-      <li><a href="Offers.vue">Bons plans</a></li>
-      <li><a href="Members.vue">Membres</a></li>
-      <li><a href="Contact.vue">Contact</a></li>
-      <li><a @click="switchComponent">Boutique</a></li>
+      <li><a class="lien_pages" href="Main.vue">Accueil</a></li>
+      <li><a class="lien_pages" href="Event.vue">Evenements</a></li>
+      <li><a class="lien_pages" href="Offers.vue">Bons plans</a></li>
+      <li><a class="lien_pages" href="Members.vue">Membres</a></li>
+      <li><a class="lien_pages" href="Contact.vue">Contact</a></li>
+      <li><a class="lien_pages" @click="switchComponent">Boutique</a></li>
     </ul>
 
     <button id="account_btn">COMPTE</button>
@@ -56,6 +56,7 @@ header button {
 #menu li {
     list-style: none;
     margin: 0 15px;
+    justify-content:center;
 }
 #menu li a {
     font-size: 14px;
@@ -65,10 +66,12 @@ header button {
 }
 #menu li a:hover {
     color: #6231C6;
+    text-transform: uppercase;
 }
 #account_btn {
   border-radius: 0;
 }
+
 </style>
 
 <script>

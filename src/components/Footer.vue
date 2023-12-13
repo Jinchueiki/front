@@ -47,7 +47,6 @@ footer {
     justify-content: center;
     width: 30%;
     display: inline-block;
-    background-color: red;
 }
 
 #contacts {
@@ -55,7 +54,6 @@ footer {
     justify-content: center;
     width: 30%;
     display: inline-block;
-    background-color: red;
 }
 
 #reseaux {
@@ -63,7 +61,6 @@ footer {
     justify-content: center;
     width: 30%;
     display: inline-block;
-    background-color: red;
 }
 
 #footer{
