@@ -3,7 +3,7 @@
 </script>
 
 <template> <!-- BALISE TEMPLATE POUR HTML -->
-<footer>
+<footer id="footer">
     <div id="pages">
         <a href="App.vue">Accueil</a>
         <a href="Event.vue">Evenements</a>
@@ -12,13 +12,13 @@
         <a href="Contact.vue">Contact</a>
         <a href="Shop.vue">Boutique</a>
     </div>
-    <div id="contacts">Contacts
+    <div id="contacts">
         Address : 29 avenue Leclerc
         Number : 04 28 29 25 75
         City : 69007 Lyon
         Mail : bde.estiam.lyon7@gmail.com
     </div>
-    <div id="reseaux">Réseaux
+    <div id="reseaux">
         <a href="https://www.instagram.com/bde.estiam_lyon">Instagram</a>
         <a href="https://discord.com/invite/wwKDpn7r">Discord</a>
         <a href="https://www.facebook.com/profile.php/?id=100068550985078&name=xhp_nt__fb__action__open_user&locale=fr_FR">Facebook</a>
@@ -29,7 +29,9 @@
 
 <style scoped> /* BALISE SCRIPT POUR CSS */
 footer {
-    display: inline-block;
+    display: flex;
+    margin-top: auto;
+    position: fixed;
     background-color: #6231C6;
     text-align: center;
     width: 100%;
@@ -41,17 +43,33 @@ footer {
 }
 
 #pages {
+    display: flex;
+    justify-content: center;
     width: 30%;
     display: inline-block;
+    background-color: red;
 }
 
 #contacts {
+    display: flex;
+    justify-content: center;
     width: 30%;
     display: inline-block;
+    background-color: red;
 }
 
 #reseaux {
+    display: flex;
+    justify-content: center;
     width: 30%;
     display: inline-block;
+    background-color: red;
+}
+
+#footer{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    
 }
 </style>

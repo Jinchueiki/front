@@ -14,7 +14,7 @@
       <li><a href="Offers.vue">Bons plans</a></li>
       <li><a href="Members.vue">Membres</a></li>
       <li><a href="Contact.vue">Contact</a></li>
-      <li><button @click="switchComponent">Boutique</button></li>
+      <li><a @click="switchComponent">Boutique</a></li>
     </ul>
 
     <button id="account_btn">COMPTE</button>

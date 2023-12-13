@@ -20,7 +20,7 @@ import Contact from './components/Contact.vue';
 </template>
 
 <style scoped>
-/* Your scoped styles go here */
+
 </style>
 
 <script>
